@@ -3,22 +3,26 @@ import { useState } from "react";
 const Navbar = () => {
   let Links = [
     { name: "HOME", link: "/" },
-    { name: "SUPPLIES", link: "/" },
-    { name: "DASHBOARD", link: "/" },
-    { name: "LOGIN", link: "/" },
+    { name: "SUPPLIES", link: "/supplies" },
+    { name: "DASHBOARD", link: "/dashboard" },
+    { name: "LOGIN", link: "/login" },
   ];
   let [open, setOpen] = useState(false);
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-5">
         <div
-          className="font-bold text-2xl cursor-pointer flex items-center 
+          className="font-bold text-2xl flex items-center 
       text-gray-800"
         >
-          <span className="text-3xl text-indigo-600 mr-1 pt-2">
+          <span className="text-3xl text-indigo-600 mr-1">
             <img className="w-20" src="/public/logo.png" alt="" />
           </span>
-          Resilience
+          RESILIENCE{" "}
+          <span className="xl:block hidden">
+            {" "}
+            -Connecting Communities to Vital Supplies
+          </span>
         </div>
 
         <div
