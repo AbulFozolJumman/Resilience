@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Supplies from "./Pages/Home/Supplies/Supplies.jsx";
 import Dashboard from "./Pages/Dashboard/Home/Dashboard.jsx";
 import Login from "./components/Login.jsx";
 import Error from "./components/error.jsx";
 import HomeLayout from "./Pages/Home/HomeLayout/HomeLayout.jsx";
+import AllSupplies from "./Pages/Supplies/AllSupplies.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "supplies",
-        element: <Supplies />,
+        element: <AllSupplies />,
       },
       {
         path: "login",

@@ -1,0 +1,74 @@
+[
+  {
+    "image": "https://i.ibb.co/Lhw52hZ/First-Aid-Kit.jpg",
+    "title": "Emergency First Aid Kit",
+    "category": "Medical Supplies",
+    "amount": "10 kits"
+  },
+  {
+    "image": "https://i.ibb.co/s6PdDW4/Antibiotics.jpg",
+    "title": "Antibiotics",
+    "category": "Medications",
+    "amount": "100 doses"
+  },
+  {
+    "image": "https://i.ibb.co/d4wB7Vb/Water-Purification-Tablets.jpg",
+    "title": "Water Purification Tablets",
+    "category": "Hygiene Supplies",
+    "amount": "500 tablets"
+  },
+  {
+    "image": "https://i.ibb.co/bJbbvkL/Surgical-Masks.jpg",
+    "title": "Surgical Masks",
+    "category": "Personal Protective Equipment",
+    "amount": "200 masks"
+  },
+  {
+    "image": "https://i.ibb.co/Zcdp88W/Blankets.jpg",
+    "title": "Blankets",
+    "category": "Shelter Supplies",
+    "amount": "50 blankets"
+  },
+  {
+    "image": "https://i.ibb.co/QYL7YGv/Oral-Rehydration-Salts.jpg",
+    "title": "Oral Rehydration Salts",
+    "category": "Medical Supplies",
+    "amount": "100 packets"
+  },
+  {
+    "image": "https://i.ibb.co/mCpQx1v/Emergency-Flashlights.jpg",
+    "title": "Emergency Flashlights",
+    "category": "Lighting Supplies",
+    "amount": "20 flashlights"
+  },
+  {
+    "image": "https://i.ibb.co/8Bk95j3/Bandages.jpg",
+    "title": "Bandages",
+    "category": "Medical Supplies",
+    "amount": "300 rolls"
+  },
+  {
+    "image": "https://i.ibb.co/Kjfj1ZQ/Portable-Generators.jpg",
+    "title": "Portable Generators",
+    "category": "Power Supplies",
+    "amount": "5 generators"
+  },
+  {
+    "image": "https://i.ibb.co/jbCCKCM/Pain-Relievers.jpg",
+    "title": "Pain Relievers",
+    "category": "Medications",
+    "amount": "200 tablets"
+  },
+  {
+    "image": "https://i.ibb.co/z73rkTq/Tents.jpg",
+    "title": "Tents",
+    "category": "Shelter Supplies",
+    "amount": "10 tents"
+  },
+  {
+    "image": "https://i.ibb.co/J5L4Djb/Hygiene-Kits.jpg",
+    "title": "Hygiene Kits",
+    "category": "Hygiene Supplies",
+    "amount": "50 kits"
+  }
+]
