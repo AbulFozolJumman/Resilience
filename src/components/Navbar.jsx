@@ -18,7 +18,7 @@ const Navbar = () => {
           text-[#DE76A3] font-bold font-[cursive]"
         >
           <span className="text-3xl mr-3">
-            <img className="w-20" src={logo} alt="" />
+            <img className="md:w-20 w-16" src={logo} alt="" />
           </span>
           RESILIENCE
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex z-50 md:items-center md:pb-0 pb-8 absolute md:static md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in bg-[#401D3E] ${
+          className={`md:flex z-50 md:items-center md:pb-0 pb-5 absolute md:static md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in bg-[#401D3E] ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >

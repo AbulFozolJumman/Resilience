@@ -1,0 +1,92 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 #00000073;
+  transition: all 0.3s;
+}
+
+.card-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.image-container {
+  display: block;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.meta-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.meta-container .title {
+  padding: 0;
+  margin: 10px 0;
+  font-size: 22px;
+  color: #0076b6;
+}
+
+.meta-container .desc {
+  font-size: 13px;
+  text-align: center;
+  color: #373737;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+.button-container .button {
+  width: 100%;
+  padding: 6px 0;
+  text-decoration: none;
+  background: linear-gradient(125deg, #00ff35 0%, #0091a7 60%);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.button2 {
+  width: 100%;
+  padding: 6px 0;
+  text-decoration: none;
+  background: #de76a3;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+.button3 {
+  width: 100%;
+  padding: 6px 0;
+  text-decoration: none;
+  background: #401d3e;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+
+.button-container .button:hover {
+  padding-left: 15px;
+}
