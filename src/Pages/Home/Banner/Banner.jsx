@@ -3,11 +3,12 @@ import bgVideo from "../../../assets/Resilience.mp4";
 
 const Banner = () => {
   return (
-    <div className="bg-black mx-auto relative">
+    <div className="max-w-[1440px] mx-auto relative">
       <video
         src={bgVideo}
         autoPlay
         loop
+        // controls
         muted
         // poster={black}
         className="md:h-[86vh] w-[100%] object-cover"

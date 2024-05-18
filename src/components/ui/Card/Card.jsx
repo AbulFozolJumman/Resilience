@@ -1,8 +1,20 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import "../../ui/Card/Card.css";
 const Card = ({ item }) => {
+  // Add event item Modal function
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="card-container">
+    <div className="card-container relative">
       <div className="image-container">
         <img src={item?.image} alt={item?.title} />
       </div>
@@ -16,9 +28,25 @@ const Card = ({ item }) => {
         </div>
       </div>
       <div className="button-container">
-        <a href="#" className="button">
+        <button className="button" onClick={handleOpenModal}>
           Read More →
-        </a>
+        </button>
+      </div>
+
+      <div>
+        {isModalOpen && (
+          <div className="absolute bottom-0 inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <div className="bg-white p-3 rounded shadow-lg w-[90%]">
+              <p className="text-lg mb-4 text-left">{item.description}</p>
+              <button
+                onClick={handleCloseModal}
+                className="px-4 text-center py-1 bg-gradient-to-r from-[#00ff35] to-[#0091a7] text-white rounded"
+              >
+                Okay
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

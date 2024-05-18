@@ -1,74 +1,98 @@
 [
   {
+    "id": 1,
     "image": "https://i.ibb.co/Lhw52hZ/First-Aid-Kit.jpg",
     "title": "Emergency First Aid Kit",
     "category": "Medical Supplies",
-    "amount": "10 kits"
+    "amount": "10 kits",
+    "description": "A comprehensive emergency first aid kit equipped with all essential medical supplies to handle minor injuries and emergency situations effectively."
   },
   {
+    "id": 2,
     "image": "https://i.ibb.co/s6PdDW4/Antibiotics.jpg",
     "title": "Antibiotics",
     "category": "Medications",
-    "amount": "100 doses"
+    "amount": "100 doses",
+    "description": "A broad-spectrum antibiotic collection to treat various bacterial infections, ensuring health and safety during medical emergencies."
   },
   {
+    "id": 3,
     "image": "https://i.ibb.co/d4wB7Vb/Water-Purification-Tablets.jpg",
     "title": "Water Purification Tablets",
     "category": "Hygiene Supplies",
-    "amount": "500 tablets"
+    "amount": "500 tablets",
+    "description": "Essential water purification tablets that make contaminated water safe to drink by eliminating harmful bacteria and viruses, ideal for survival situations."
   },
   {
+    "id": 4,
     "image": "https://i.ibb.co/bJbbvkL/Surgical-Masks.jpg",
     "title": "Surgical Masks",
     "category": "Personal Protective Equipment",
-    "amount": "200 masks"
+    "amount": "200 masks",
+    "description": "High-quality surgical masks designed to provide protection against airborne particles and pathogens, ensuring safety in various medical and public settings."
   },
   {
+    "id": 5,
     "image": "https://i.ibb.co/Zcdp88W/Blankets.jpg",
     "title": "Blankets",
     "category": "Shelter Supplies",
-    "amount": "50 blankets"
+    "amount": "50 blankets",
+    "description": "Durable and warm blankets essential for providing comfort and warmth in emergency shelters, suitable for various weather conditions."
   },
   {
+    "id": 6,
     "image": "https://i.ibb.co/QYL7YGv/Oral-Rehydration-Salts.jpg",
     "title": "Oral Rehydration Salts",
     "category": "Medical Supplies",
-    "amount": "100 packets"
+    "amount": "100 packets",
+    "description": "Packets of oral rehydration salts designed to prevent and treat dehydration caused by severe diarrhea, vomiting, or other medical conditions."
   },
   {
+    "id": 7,
     "image": "https://i.ibb.co/mCpQx1v/Emergency-Flashlights.jpg",
     "title": "Emergency Flashlights",
     "category": "Lighting Supplies",
-    "amount": "20 flashlights"
+    "amount": "20 flashlights",
+    "description": "Reliable and durable emergency flashlights providing essential lighting during power outages and in emergency situations, ensuring visibility and safety."
   },
   {
+    "id": 8,
     "image": "https://i.ibb.co/8Bk95j3/Bandages.jpg",
     "title": "Bandages",
     "category": "Medical Supplies",
-    "amount": "300 rolls"
+    "amount": "300 rolls",
+    "description": "A variety of bandages for treating wounds and injuries, including adhesive strips, gauze, and elastic wraps, essential for any first aid kit."
   },
   {
+    "id": 9,
     "image": "https://i.ibb.co/Kjfj1ZQ/Portable-Generators.jpg",
     "title": "Portable Generators",
     "category": "Power Supplies",
-    "amount": "5 generators"
+    "amount": "5 generators",
+    "description": "Portable generators providing reliable power supply during emergencies, ideal for maintaining electricity for essential devices and equipment."
   },
   {
+    "id": 10,
     "image": "https://i.ibb.co/jbCCKCM/Pain-Relievers.jpg",
     "title": "Pain Relievers",
     "category": "Medications",
-    "amount": "200 tablets"
+    "amount": "200 tablets",
+    "description": "Effective pain relievers to alleviate various types of pain and discomfort, including headaches, muscle aches, and fever, ensuring relief in emergencies."
   },
   {
+    "id": 11,
     "image": "https://i.ibb.co/z73rkTq/Tents.jpg",
     "title": "Tents",
     "category": "Shelter Supplies",
-    "amount": "10 tents"
+    "amount": "10 tents",
+    "description": "Sturdy and weather-resistant tents providing temporary shelter in emergency situations, designed for quick assembly and reliable protection."
   },
   {
+    "id": 12,
     "image": "https://i.ibb.co/J5L4Djb/Hygiene-Kits.jpg",
     "title": "Hygiene Kits",
     "category": "Hygiene Supplies",
-    "amount": "50 kits"
+    "amount": "50 kits",
+    "description": "Comprehensive hygiene kits containing essential items like soap, toothbrushes, toothpaste, and sanitary products, ensuring personal cleanliness in emergencies."
   }
 ]

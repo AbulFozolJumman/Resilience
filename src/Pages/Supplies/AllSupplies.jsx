@@ -42,9 +42,9 @@ const AllSupplies = () => {
         <hr className="md:w-20 w-12 border-2 border-[#DE76A3]" />
       </div>
       <div className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mx-auto max-w-[1440px] px-5 md:px-0">
-        {data.map((item, index) => (
+        {data?.map((item) => (
           <>
-            <Card item={item} key={index} />
+            <Card item={item} key={item.id} />
           </>
         ))}
       </div>
