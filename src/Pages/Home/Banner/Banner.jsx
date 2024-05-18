@@ -1,22 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
-import bgVideo from "../../../assets/How to organise social services during and after a natural disaster_ (online-video-cutter.com).mp4";
+import bgVideo from "../../../assets/Resilience.mp4";
 
 const Banner = () => {
   return (
-    <div className="bg-black mx-auto">
+    <div className="bg-black mx-auto relative">
       <video
         src={bgVideo}
         autoPlay
         loop
         muted
         // poster={black}
-        className="md:h-[86vh] w-[100%] object-cover opacity-[0.6]"
+        className="md:h-[86vh] w-[100%] object-cover"
       ></video>
-      <div className="w-[90%] text-white text-center absolute top-[100px] md:top-[40%] left-0 right-0 mx-auto">
-        <h2 className="my-4 text-[20px] lg:text-[50px] font-bold drop-shadow-md">
-          <span className="font-[cursive] uppercase">Resilience</span> <br />
+      <div className="w-full text-[#DE76A3] text-center absolute bottom-0 left-0 right-0 mx-auto bg-[#401D3E] bg-opacity-[0.6] lg:pb-2 pb-1">
+        <h1 className="font-[cursive] uppercase leading-0 text-[25px] lg:text-[50px] leading-0 font-bold drop-shadow-md leading-none opacity-100">
+          Resilience
+        </h1>
+        <p className="text-[16px] lg:text-[35px] leading-none">
           Connecting Communities to Vital Supplies
-        </h2>
+        </p>
       </div>
     </div>
   );
