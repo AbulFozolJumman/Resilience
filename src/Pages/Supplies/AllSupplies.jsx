@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/ui/Card/Card";
+import Heading from "../../components/Heading";
 
 const AllSupplies = () => {
   const [data, setData] = useState(null);
@@ -34,13 +35,7 @@ const AllSupplies = () => {
   }
   return (
     <div className="md:py-20 py-10">
-      <div className="flex justify-center items-center gap-5 md:mb-10 mb-5">
-        <hr className="md:w-20 w-12 border-2 border-[#DE76A3]" />
-        <h2 className="md:text-4xl text-2xl font-bold  text-[#401D3E]">
-          ALL SUPPLIES
-        </h2>
-        <hr className="md:w-20 w-12 border-2 border-[#DE76A3]" />
-      </div>
+      <Heading title="All Supplies" />
       <div className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mx-auto max-w-[1440px] px-5 md:px-0">
         {data?.map((item) => (
           <>
