@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import Gallery from "../Gallery/Gallery";
 import Supplies from "../Supplies/Supplies";
 import Testimonials from "../Testimonials/Testimonials";
 
@@ -8,6 +9,7 @@ const HomeLayout = () => {
       <Banner />
       <Supplies />
       <Testimonials />
+      <Gallery />
     </>
   );
 };
