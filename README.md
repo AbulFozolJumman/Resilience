@@ -1,3 +1,3 @@
 # Resilience - Connecting Communities to Vital Supplies
 
-## https://resilienceforcommunity.netlify.app/
+## https://resilience-for-community.netlify.app/

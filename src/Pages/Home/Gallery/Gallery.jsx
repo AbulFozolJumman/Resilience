@@ -4,7 +4,7 @@ import Heading from "../../../components/Heading";
 
 const Gallery = () => {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div className="max-w-[1440px] mx-auto md:pb-20 pb-10">
       <Heading title="Gallery" />
       <Swiper
         effect={"coverflow"}
