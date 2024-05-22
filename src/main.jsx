@@ -1,23 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./Pages/Dashboard/Home/Dashboard.jsx";
-import Login from "./components/Login.jsx";
-import Error from "./components/error.jsx";
-import HomeLayout from "./Pages/Home/HomeLayout/HomeLayout.jsx";
-import AllSupplies from "./Pages/Supplies/AllSupplies.jsx";
+import Error from "./components/ui/error.jsx";
+import AllSupplies from "./Pages/SuppliesPage/AllSupplies.jsx";
+import Authentication from "./Pages/AuthenticationPage/Login.jsx";
+import HomeLayout from "./Layout/HomeLayout/HomeLayout.jsx";
+import DashboardLayout from "./Layout/DashboardLayout/DashboardLayout.jsx";
+import Dashboard from "./Pages/DashboardPage/Dashboard.jsx";
+import Home from "./Pages/HomePage/Home.jsx";
+import DashboardAllSupplies from "./components/DashboardComponents/DashboardAllSupplies/DashboardAllSupplies.jsx";
+import PieChart from "./components/DashboardComponents/PieChart/PieChart.jsx";
+import CreateSupply from "./components/DashboardComponents/CreateSupply/CreateSupply.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomeLayout />,
     errorElement: <Error />,
     children: [
       {
         index: true,
-        element: <HomeLayout />,
+        element: <Home />,
       },
       {
         path: "supplies",
@@ -25,21 +29,39 @@ const router = createBrowserRouter([
       },
       {
         path: "login",
-        element: <Login />,
+        element: <Authentication />,
       },
     ],
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: <DashboardLayout />,
     errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: "supplies",
+        element: <DashboardAllSupplies />,
+      },
+      {
+        path: "create-supply",
+        element: <CreateSupply />,
+      },
+      {
+        path: "chart",
+        element: <PieChart />,
+      },
+    ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <App />
+      <HomeLayout />
     </RouterProvider>
   </React.StrictMode>
 );

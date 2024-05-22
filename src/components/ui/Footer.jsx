@@ -1,4 +1,4 @@
-import icon from "../assets/internet-icon.png";
+import icon from "../../assets/internet-icon.png";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-10 pb-5">

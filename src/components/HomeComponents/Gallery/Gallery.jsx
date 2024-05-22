@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import Heading from "../../../components/Heading";
+import Heading from "../../ui/Heading";
 
 const Gallery = () => {
   return (

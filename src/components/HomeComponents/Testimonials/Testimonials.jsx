@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import Heading from "../../../components/Heading";
+import Heading from "../../ui/Heading";
 import Marquee from "react-fast-marquee";
-// import quotation from "../../../assets/quotation-marks.png";
 
 const Testimonials = () => {
   const [data, setData] = useState(null);
