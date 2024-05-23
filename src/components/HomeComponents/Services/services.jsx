@@ -62,15 +62,15 @@ const services = [
 const WhatWeDo = () => {
   return (
     <section className="md:py-20 py-10 bg-gradient-to-r from-[#401D3E] via-[#428993] to-[#DE76A3]">
-      <div className="max-w-[1440px] mx-auto px-10">
+      <div className="max-w-[1440px] mx-auto md:px-10 px-5">
         <Heading title="What We Do" />
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid md:gap-8 gap-5 lg:grid-cols-2">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white md:p-6 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <h3 className="text-2xl font-semibold mb-4 text-indigo-700">
+              <h3 className="text-2xl font-semibold mb-4 text-[#0076b6]">
                 {service.title}
               </h3>
               <ul className="list-disc list-inside text-gray-700">
