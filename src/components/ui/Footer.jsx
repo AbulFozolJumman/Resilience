@@ -2,7 +2,7 @@ import icon from "../../assets/internet-icon.png";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-10 pb-5">
-      <div className="container mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto md:px-10 px-5">
         <div className="flex flex-wrap justify-between">
           {/* Contact Information */}
           <div className="w-full md:w-1/3 mb-8 md:mb-0">

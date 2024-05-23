@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Heading from "../../ui/Heading";
 
 const DashboardAllSupplies = () => {
   const [supplies, setSupplies] = useState([]);
@@ -19,32 +20,65 @@ const DashboardAllSupplies = () => {
   };
 
   return (
-    <div>
-      <h1>All Supplies</h1>
-      <Link to="/dashboard/create-supply">Add Supply Post</Link>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Amount</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {supplies.map((supply) => (
-            <tr key={supply.id}>
-              <td>{supply.title}</td>
-              <td>{supply.category}</td>
-              <td>{supply.amount}</td>
-              <td>
-                <button onClick={() => handleDelete(supply.id)}>Delete</button>
-                <Link to={`/dashboard/edit-supply/${supply.id}`}>Edit</Link>
-              </td>
+    <div className="md:px-10 px-5">
+      <Heading title="Manage All Supplies" />
+      <div className="mb-4">
+        <Link
+          to="/dashboard/create-supply"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Add Supply Post
+        </Link>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="min-w-full bg-white border border-gray-300">
+          <thead className="bg-gray-200">
+            <tr>
+              <th className="py-2 px-4 border-b border-gray-300 text-left">
+                Title
+              </th>
+              <th className="py-2 px-4 border-b border-gray-300 text-left">
+                Category
+              </th>
+              <th className="py-2 px-4 border-b border-gray-300 text-left">
+                Amount
+              </th>
+              <th className="py-2 px-4 border-b border-gray-300 text-left">
+                Actions
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {supplies.map((supply) => (
+              <tr key={supply.id} className="hover:bg-gray-100">
+                <td className="py-2 px-4 border-b border-gray-300">
+                  {supply.title}
+                </td>
+                <td className="py-2 px-4 border-b border-gray-300">
+                  {supply.category}
+                </td>
+                <td className="py-2 px-4 border-b border-gray-300">
+                  {supply.amount}
+                </td>
+                <td className="py-2 lg:space-x-2 px-4 border-b border-gray-300">
+                  <button
+                    onClick={() => handleDelete(supply.id)}
+                    className="bg-red-500 hover:bg-red-700 text-white lg:mb-0 mb-2 py-1 px-2 rounded"
+                  >
+                    Delete
+                  </button>
+                  <Link
+                    to={`/dashboard/edit-supply/${supply.id}`}
+                    className="bg-green-500 hover:bg-green-700 text-white py-1 px-[18px] rounded"
+                  >
+                    Edit
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

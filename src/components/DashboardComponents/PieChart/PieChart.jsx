@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
+import Heading from "../../ui/Heading";
 
 const SuppliesPieChart = () => {
   const [data, setData] = useState([]);
@@ -52,6 +53,7 @@ const SuppliesPieChart = () => {
 
   return (
     <div className="max-w-[450px] mx-auto overflow-x-scroll">
+      <Heading title="PieChart" />
       <PieChart width={450} height={500} className="mx-auto">
         <Pie
           data={data}
