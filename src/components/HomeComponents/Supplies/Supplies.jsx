@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../../ui/Card/Card";
 import { Link } from "react-router-dom";
 import Heading from "../../ui/Heading";
+import Loader from "../../ui/Loader/Loader";
 
 const Supplies = () => {
   const [data, setData] = useState(null);
@@ -28,7 +29,7 @@ const Supplies = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (error) {

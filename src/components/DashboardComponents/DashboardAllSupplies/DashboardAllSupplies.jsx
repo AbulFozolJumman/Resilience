@@ -1,15 +1,39 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Heading from "../../ui/Heading";
+import Loader from "../../ui/Loader/Loader";
 
 const DashboardAllSupplies = () => {
   const [supplies, setSupplies] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("https://resilience-backend.vercel.app/supplies")
-      .then((response) => response.json())
-      .then((data) => setSupplies(data));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((jsonData) => {
+        setSupplies(jsonData);
+      })
+      .catch((err) => {
+        setError(err.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this supply?")) {

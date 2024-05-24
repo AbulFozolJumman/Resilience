@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/ui/Card/Card";
 import Heading from "../../components/ui/Heading";
+import Loader from "../../components/ui/Loader/Loader";
 
 const AllSupplies = () => {
   const [data, setData] = useState(null);
@@ -27,7 +28,7 @@ const AllSupplies = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (error) {

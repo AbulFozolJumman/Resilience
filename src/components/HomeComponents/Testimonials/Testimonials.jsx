@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Heading from "../../ui/Heading";
 import Marquee from "react-fast-marquee";
+import Loader from "../../ui/Loader/Loader";
 
 const Testimonials = () => {
   const [data, setData] = useState(null);
@@ -27,7 +28,7 @@ const Testimonials = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (error) {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import Heading from "../../ui/Heading";
+import Loader from "../../ui/Loader/Loader";
 
 const SuppliesPieChart = () => {
   const [data, setData] = useState([]);
@@ -48,7 +49,7 @@ const SuppliesPieChart = () => {
   ];
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return (
