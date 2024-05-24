@@ -41,9 +41,7 @@ const Supplies = () => {
       <Heading title="Our Supplies" />
       <div className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mx-auto max-w-[1440px] px-5 md:px-0">
         {data?.map((item) => (
-          <>
-            <Card item={item} key={item.id} />
-          </>
+          <Card item={item} key={item._id} />
         ))}
       </div>
       <Link

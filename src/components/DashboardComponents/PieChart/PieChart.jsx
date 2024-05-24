@@ -25,7 +25,7 @@ const SuppliesPieChart = () => {
           return acc;
         }, []);
 
-        console.log("Aggregated data:", aggregatedData);
+        // console.log("Aggregated data:", aggregatedData);
         setData(aggregatedData);
         setLoading(false);
       })
