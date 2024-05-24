@@ -6,7 +6,7 @@ const DashboardAllSupplies = () => {
   const [supplies, setSupplies] = useState([]);
 
   useEffect(() => {
-    fetch("supplies.json")
+    fetch("https://resilience-backend.vercel.app/supplies")
       .then((response) => response.json())
       .then((data) => setSupplies(data));
   }, []);
@@ -22,14 +22,6 @@ const DashboardAllSupplies = () => {
   return (
     <div className="md:px-10 px-5">
       <Heading title="Manage All Supplies" />
-      <div className="mb-4">
-        <Link
-          to="/dashboard/create-supply"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Add Supply Post
-        </Link>
-      </div>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-300">
           <thead className="bg-gray-200">
@@ -78,6 +70,16 @@ const DashboardAllSupplies = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="mt-10 mb-10 flex justify-center">
+        <Link
+          to="/dashboard/create-supply"
+          className="block bg-gradient-to-r from-[#de76a3] to-[#401d3e] text-white rounded-md uppercase text-center py-2 w-[300px] mx-auto"
+        >
+          <span className="hover:pl-5 transition-all font-medium">
+            Add Supply Post →
+          </span>
+        </Link>
       </div>
     </div>
   );

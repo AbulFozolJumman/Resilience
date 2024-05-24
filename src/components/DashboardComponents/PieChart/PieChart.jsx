@@ -7,12 +7,12 @@ const SuppliesPieChart = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("supplies.json")
+    fetch("https://resilience-backend.vercel.app/supplies")
       .then((response) => response.json())
       .then((supplies) => {
         const aggregatedData = supplies.reduce((acc, supply) => {
           const category = supply.category;
-          const amount = parseInt(supply.amount.replace(/\D/g, ""), 10); // Extract number from amount string
+          const amount = parseInt(supply.amount.replace(/\D/g, ""), 10);
 
           const existingCategory = acc.find((item) => item.name === category);
           if (existingCategory) {
@@ -24,7 +24,7 @@ const SuppliesPieChart = () => {
           return acc;
         }, []);
 
-        console.log("Aggregated data:", aggregatedData); // Log aggregated data
+        console.log("Aggregated data:", aggregatedData);
         setData(aggregatedData);
         setLoading(false);
       })

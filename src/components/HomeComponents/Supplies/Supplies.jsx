@@ -9,7 +9,7 @@ const Supplies = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("supplies.json")
+    fetch("https://resilience-backend.vercel.app/supplies")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
