@@ -85,7 +85,7 @@ const DashboardAllSupplies = () => {
                   </button>
                   <Link
                     to={`/dashboard/edit-supply/${supply.id}`}
-                    className="bg-green-500 hover:bg-green-700 text-white py-1 px-[18px] rounded"
+                    className="bg-green-500 hover:bg-green-700 text-white py-[6px] px-[18px] rounded"
                   >
                     Edit
                   </Link>
@@ -100,9 +100,7 @@ const DashboardAllSupplies = () => {
           to="/dashboard/create-supply"
           className="block bg-gradient-to-r from-[#de76a3] to-[#401d3e] text-white rounded-md uppercase text-center py-2 w-[300px] mx-auto"
         >
-          <span className="hover:pl-5 transition-all font-medium">
-            Add Supply Post →
-          </span>
+          <span className="hover:pl-5 transition-all">Add Supply →</span>
         </Link>
       </div>
     </div>

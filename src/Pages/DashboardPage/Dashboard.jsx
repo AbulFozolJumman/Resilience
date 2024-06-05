@@ -10,19 +10,19 @@ const Dashboard = () => {
   };
   return (
     <>
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1440px] mx-auto min-h-screen">
         <div className="grid grid-cols-2 gap-1  items-center m-1">
           <button
             onClick={() => handleTabClick("chart")}
             className="text-white p-3 rounded hover:bg-white hover:text-[#5A01CB] focus:bg-indigo-600 focus:text-white focus:border focus:border-[#5A01CB] border border-[#5A01CB] bg-[#5A01CB] shadow-md flex items-center justify-center gap-2"
           >
-            <span className="truncate">Chart</span>
+            <span className="truncate uppercase">Supply Chart</span>
           </button>
           <button
             onClick={() => handleTabClick("supplies")}
             className="text-white p-3 rounded hover:bg-white hover:text-[#5A01CB] focus:bg-indigo-600 focus:text-white focus:border focus:border-[#5A01CB] border border-[#5A01CB] bg-[#5A01CB] shadow-md flex items-center justify-center gap-2"
           >
-            <span className="truncate">Manage Supplies</span>
+            <span className="truncate uppercase">Manage Supplies</span>
           </button>
         </div>
         <div className="py-8">

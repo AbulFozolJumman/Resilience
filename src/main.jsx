@@ -12,6 +12,8 @@ import Home from "./Pages/HomePage/Home.jsx";
 import DashboardAllSupplies from "./components/DashboardComponents/DashboardAllSupplies/DashboardAllSupplies.jsx";
 import PieChart from "./components/DashboardComponents/PieChart/PieChart.jsx";
 import CreateSupply from "./components/DashboardComponents/CreateSupply/CreateSupply.jsx";
+import { Provider } from "react-redux";
+import { store } from "./redux/store.js";
 
 const router = createBrowserRouter([
   {
@@ -61,7 +63,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <HomeLayout />
+      <Provider store={store}>
+        <HomeLayout />
+      </Provider>
     </RouterProvider>
   </React.StrictMode>
 );

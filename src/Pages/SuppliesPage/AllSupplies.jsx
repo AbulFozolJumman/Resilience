@@ -35,7 +35,7 @@ const AllSupplies = () => {
     return <p>Error: {error}</p>;
   }
   return (
-    <div className="md:py-20 py-10">
+    <div className="md:py-20 py-10 min-h-screen">
       <Heading title="All Supplies" />
       <div className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mx-auto max-w-[1440px] px-5 md:px-0">
         {data?.map((item) => (
