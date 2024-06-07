@@ -2,11 +2,15 @@ import { useEffect, useState } from "react";
 import Card from "../../components/ui/Card/Card";
 import Heading from "../../components/ui/Heading";
 import Loader from "../../components/ui/Loader/Loader";
+import { useGetSuppliesQuery } from "../../redux/api/api";
 
 const AllSupplies = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const { data: sup } = useGetSuppliesQuery("");
+  console.log(sup?.length);
 
   useEffect(() => {
     fetch("https://resilience-backend.vercel.app/supplies")
